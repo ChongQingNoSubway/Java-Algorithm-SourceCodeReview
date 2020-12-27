@@ -11,7 +11,7 @@ public class IteratorDemo {
         lst.add("xxxx");
         lst.add("sxsx");
         lst.add("sad");
-
+        
         Iterator<String> iterator = lst.iterator();
 
         while(iterator.hasNext()) {
