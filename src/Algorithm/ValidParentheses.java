@@ -11,7 +11,7 @@ import java.util.Stack;
 // Example () true  [] true  []{} true
 
 public class ValidParentheses {
-        public static boolean isValid(String s) {
+        public boolean isValid(String s) {
             Stack<String> myStack  =  new Stack<String>();
             for (int i=0;i<s.length();i++)
             {
@@ -39,12 +39,5 @@ public class ValidParentheses {
                 else myStack.push(x);
             }
             return myStack.empty();
-        }
-
-        public static void main(String[] args){
-            ValidParentheses valid = new ValidParentheses();
-            String myString = "{((}";
-            boolean result = ValidParentheses.isValid(myString);
-            System.out.println(result);
         }
 }
