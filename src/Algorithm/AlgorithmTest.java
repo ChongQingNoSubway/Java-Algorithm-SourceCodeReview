@@ -36,6 +36,25 @@ public class AlgorithmTest {
         FindCloserNumber myFind = new FindCloserNumber();
         int x = myFind.FindCloser(A,1);
         System.out.println(x);
+
+
+        int [] b = { 1, 2, 5,5,5,7,7,8,9,9,10};
+        FirstOcurrence firstO = new FirstOcurrence();
+        int fistResult = firstO.finder(b,0, b.length -1, 3);
+        System.out.println("\n first");
+        System.out.println(fistResult);
+
+        LastOccurence lastO = new LastOccurence();
+        int lastResult = lastO.finder(b,0,b.length -1, 3);
+        System.out.println("\n last");
+        System.out.println(lastResult);
+
+        System.out.println("\n k - Closest - el");
+        int C[] = {1, 2, 3, 4, 5, 11, 15, 23, 26};
+        FindKClosestElement F = new FindKClosestElement();
+        int[] myresult = F.finder(C,0,A.length-1,5,4);
+        printArray(myresult);
+
     }
 
     static void printArray(int arr[]) {
