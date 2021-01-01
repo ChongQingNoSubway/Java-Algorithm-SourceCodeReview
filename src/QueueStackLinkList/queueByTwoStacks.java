@@ -13,8 +13,28 @@ package QueueStackLinkList;
 // 1st time call pop() n(pop from Stack1) + n(push to Stack2) + 1(pop from stact 2) = 2n + 1
 // 2st time call pop() 1
 
+import java.util.Stack;
 
+public class queueByTwoStacks{
+    Stack<Integer> s1,s2;
 
-public class queueByTwoStacks {
+    public queueByTwoStacks() {
+        s1 = new Stack();
+        s2 = new Stack();
+    }
+
+    public void enqueue(int data) {
+        s1.push(data);
+    }
+
+    public int dequeue() {
+        if(s2.isEmpty()){
+            if(s1.isEmpty()) return -1;
+            while(!s1.isEmpty()){
+                s2.push(s1.pop());
+            }
+        }
+        return s2.pop();
+    }
 
 }

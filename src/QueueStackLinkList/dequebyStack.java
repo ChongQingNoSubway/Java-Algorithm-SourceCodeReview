@@ -12,4 +12,5 @@ package QueueStackLinkList;
 
 
 public class dequebyStack {
+
 }
