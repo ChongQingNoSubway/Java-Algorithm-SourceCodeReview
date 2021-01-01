@@ -5,12 +5,12 @@ public class FirstOcurrence {
         int mid;
         while(right-left > 1){
             mid = (left + right) / 2;
-            if(a[mid] == target){
-                right = mid;
+            if(a[mid] > target){
+                left = mid;
             }else if(a[mid] < target){
                 left = mid + 1;
             }else{
-                right = mid - 1;
+                right = mid -1;
             }
         }
         if(a[left] == target){

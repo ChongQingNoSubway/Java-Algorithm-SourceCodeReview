@@ -55,6 +55,11 @@ public class AlgorithmTest {
         int[] myresult = F.finder(C,0,A.length-1,5,4);
         printArray(myresult);
 
+        System.out.println("\n ====================");
+        FindFirstAndLast solve = new FindFirstAndLast();
+        int D[] = {5,7,7,8,8,10};
+        int re[] = solve.searchRange(D,8);
+        printArray(re);
     }
 
     static void printArray(int arr[]) {
