@@ -82,6 +82,15 @@ public class binaryTree {
     }
 
     // this method time complexity is so big if there are so many node.
+    public void  AdPrintKeysFromBST(TreeNode root, int k1, int k2) {
+    if(root == null) return;
+    if(root.value > k1) {
+        AdPrintKeysFromBST(root.left,k1,k2);
+    }
+    if(k1<root.value && k2> root.value) System.out.println(root.value);
+    if(root.value<k2){
+        AdPrintKeysFromBST(root.right, k1,k2);
+    }
 
-
+    }
 }
