@@ -27,12 +27,12 @@ public class advanceTopic {
         int mid = left+ size/2;
         int leftmid = left + size/4;
         int rightmid = left+ size*3/4;
-        reverse(a,leftmid,mid-1);
-        reverse(a,mid,rightmid-1);
-        reverse(a,leftmid,rightmid-1);
+//        reverse(a,leftmid,mid-1);
+//        reverse(a,mid,rightmid-1);
+//        reverse(a,leftmid,rightmid-1);
 
         convert(a,left,left+2*(leftmid-left)-1);
-        convert(a,left+2(leftmid-left), right);
+        convert(a,left+2*(leftmid-left), right);
     }
 
     //2.String permutation (DFS)
@@ -49,9 +49,9 @@ public class advanceTopic {
         for(int i = index; i< c.length; i++){
             if(!st.contains(c[i])){
                 st.add(c[i]);
-                swap(c,index,i);
-                permutation(c,index+1);
-                swap(c,index,i);
+//                swap(c,index,i);
+//                permutation(c,index+1);
+//                swap(c,index,i);
             }
         }
     }
@@ -85,21 +85,22 @@ public class advanceTopic {
         int max = 0;
         int start, end;
         for(int f = 0 ; f < input.length; ++f){
-            my_map.put([input[f]],);
-            if(my_map[input[f]]>1){
-                while(my_map[input[f]]>1){
-                    my_map[input[s]]--;
-                    s++;
-                }
-            }else{
-                if(f-s+1>max){
-                    max = f -s + 1;
-                    start = s;
-                    end = f;
-                }
-            }
+//            my_map.put([input[f]],);
+//            if(my_map[input[f]]>1){
+//                while(my_map[input[f]]>1){
+//                    my_map[input[s]]--;
+//                    s++;
+//                }
+//            }else{
+//                if(f-s+1>max){
+//                    max = f -s + 1;
+//                    start = s;
+//                    end = f;
+//                }
+//            }
         }
-        return input.substr(start,end-start+1);
+//        return input.substr(start,end-start+1);
+        return input;
     }
 
 
