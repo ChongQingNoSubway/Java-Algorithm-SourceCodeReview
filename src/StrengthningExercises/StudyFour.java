@@ -44,5 +44,20 @@ public class StudyFour {
     //
 
 
+    //Question 6: Given three arrays with numbers in ascending order. pull one number from each array to from a coordinate
+    //  <x,y,z> in a 3D space. (1) how to find the coordinates of the point that is k-th closet to <0,0,0>
+    //
+    // assumption : all positive
+    // initial state ： i=0 j=0 k=0
+    // exp/ gen rule : <i+1,j,k> <i,j+1,k> <i,j,k+1>
+    // termination : popped the k-th element
+    // distance to origin = sqrt(x^2+y^2+z^2)
+
+
+    //Question 7: Given a single computer with a single cpu and a single core, which has 2GB of memory and 1GB available
+    // for use, it also has two 100GB hard drives. how to sort 80GB integers of 64bits ?
+    // External sort
+
+
 
 }
